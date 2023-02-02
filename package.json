@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "solid-js": "^1.6.6",
+    "solid-router": "^0.3.3",
     "solid-styled-components": "^0.28.5",
     "solid-zustand": "^1.5.0"
   }
