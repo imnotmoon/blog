@@ -1,3 +1,3 @@
-import { Root } from './Header.styles';
+import { Nav } from './Header.styles';
 
-export const Header = () => <Root />;
+export const Header = () => <Nav />;

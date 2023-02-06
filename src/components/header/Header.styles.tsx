@@ -1,5 +1,5 @@
 import { styled } from 'solid-styled-components';
 
-export const Root = styled('nav')`
+export const Nav = styled('nav')`
   width: 100%;
 `;

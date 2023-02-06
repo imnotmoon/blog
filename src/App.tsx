@@ -1,12 +1,15 @@
 import type { Component } from 'solid-js';
 import { GlobalStyles } from './App.styles';
-import { Header } from './components/header';
+import { Route, Router, Routes } from '@solidjs/router';
+import { HomePage } from './components/home';
 
 export const App: Component = () => (
-  <>
+  <Router>
     <GlobalStyles />
-    <div>
-      <Header />
-    </div>
-  </>
+    <Routes>
+      <Route path="/">
+        <HomePage />
+      </Route>
+    </Routes>
+  </Router>
 );
