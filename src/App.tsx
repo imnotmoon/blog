@@ -12,6 +12,12 @@ export const App: Component = () => (
         <Route path="/">
           <HomePage />
         </Route>
+        <Route path="/bio">
+          <div>bio page</div>
+        </Route>
+        <Route path="/article">
+          <div>article</div>
+        </Route>
       </Routes>
     </Layout>
   </Router>

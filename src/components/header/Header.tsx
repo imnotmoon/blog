@@ -1,6 +1,7 @@
 import { Root, Body, Footer } from './Header.styles';
 import { Button } from '../button/Button';
 import { JSX } from 'solid-js';
+import { NavLink } from '@solidjs/router';
 
 export const Header = () => {
   const onClick: JSX.EventHandler<HTMLButtonElement, MouseEvent> = () => {
@@ -12,9 +13,15 @@ export const Header = () => {
         <h3>imnotmoon</h3>
       </div>
       <Body>
-        <li>home</li>
-        <li>bio</li>
-        <li>articles</li>
+        <li>
+          <NavLink href="/">home</NavLink>
+        </li>
+        <li>
+          <NavLink href="/bio">bio</NavLink>
+        </li>
+        <li>
+          <NavLink href="/article">article</NavLink>
+        </li>
       </Body>
       <Footer>
         <Button onClick={onClick}>Search</Button>

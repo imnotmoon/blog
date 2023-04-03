@@ -14,6 +14,11 @@ export const Body = styled.ul`
   > li + li {
     margin-left: 20px;
   }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 `;
 
 export const Root = styled.nav`
