@@ -1,12 +1,12 @@
-import { ParentComponent } from 'solid-js';
 import { Header } from '../header';
-import { Root } from './Layout.styles';
+import { Root, Body } from './Layout.styles';
 import { Footer } from '../footer';
+import { ParentComponent } from 'solid-js';
 
 export const Layout: ParentComponent = (props) => (
   <Root>
     <Header />
-    <div>{props.children}</div>
+    <Body>{props.children}</Body>
     <Footer />
   </Root>
 );

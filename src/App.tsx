@@ -14,15 +14,9 @@ export const App: Component = () => (
       <GlobalStyles />
       <Layout>
         <Routes>
-          <Route path="/">
-            <HomePage />
-          </Route>
-          <Route path="/bio">
-            <BioPage />
-          </Route>
-          <Route path="/article">
-            <ArticlePage />
-          </Route>
+          <Route path="/bio" component={BioPage} />
+          <Route path="/article" component={ArticlePage} />
+          <Route path="/" component={HomePage} />
         </Routes>
       </Layout>
     </Router>
