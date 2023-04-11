@@ -16,15 +16,20 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-solid": "^0.9.4",
+    "msw": "^1.2.1",
     "prettier": "2.8.3",
     "typescript": "^4.9.4",
     "vite": "^4.0.3",
     "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
+    "@solidjs/router": "^0.7.0",
+    "@tanstack/solid-query": "^4.29.1",
     "solid-js": "^1.6.6",
     "solid-styled-components": "^0.28.5",
-    "@solidjs/router": "^0.7.0",
     "solid-zustand": "^1.5.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

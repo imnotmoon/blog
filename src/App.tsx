@@ -3,22 +3,28 @@ import { GlobalStyles } from './App.styles';
 import { Route, Router, Routes } from '@solidjs/router';
 import { HomePage } from './components/home';
 import { Layout } from './components/layout';
+import { BioPage } from './components/bio';
+import { ArticlePage } from './components/article';
+import { QueryClient, QueryClientProvider } from '@tanstack/solid-query';
 
+const queryClient = new QueryClient();
 export const App: Component = () => (
-  <Router>
-    <GlobalStyles />
-    <Layout>
-      <Routes>
-        <Route path="/">
-          <HomePage />
-        </Route>
-        <Route path="/bio">
-          <div>bio page</div>
-        </Route>
-        <Route path="/article">
-          <div>article</div>
-        </Route>
-      </Routes>
-    </Layout>
-  </Router>
+  <QueryClientProvider client={queryClient}>
+    <Router>
+      <GlobalStyles />
+      <Layout>
+        <Routes>
+          <Route path="/">
+            <HomePage />
+          </Route>
+          <Route path="/bio">
+            <BioPage />
+          </Route>
+          <Route path="/article">
+            <ArticlePage />
+          </Route>
+        </Routes>
+      </Layout>
+    </Router>
+  </QueryClientProvider>
 );
