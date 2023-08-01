@@ -1,35 +1,28 @@
 {
-  "name": "imnotmoon-blog",
-  "version": "0.0.0",
-  "description": "",
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "@typescript-eslint/parser": "^5.50.0",
-    "eslint": "^8.33.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-solid": "^0.9.4",
-    "msw": "^1.2.1",
-    "prettier": "2.8.3",
-    "typescript": "^4.9.4",
-    "vite": "^4.0.3",
-    "vite-plugin-solid": "^2.5.0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@solidjs/router": "^0.7.0",
-    "@tanstack/solid-query": "^4.29.1",
-    "solid-js": "^1.6.6",
-    "solid-styled-components": "^0.28.5",
-    "solid-zustand": "^1.5.0"
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
-  "msw": {
-    "workerDirectory": "public"
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint-config-next": "^13.4.12",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "5.1.6",
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.46.0"
   }
 }

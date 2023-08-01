@@ -8,10 +8,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'eslint:recommended',
-    'plugin:solid/typescript',
-    'prettier',
+    'next/core-web-vitals',
+    'next',
   ],
-  overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -20,7 +19,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['@typescript-eslint', 'solid', 'prettier'],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': ['warn'],
     'linebreak-style': ['error', 'unix'],
