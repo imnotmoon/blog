@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 16px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(50px);
+}
+
+.logo {
+  a {
+    color: #fff;
+    text-decoration: line-through;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.navigation {
+  a {
+    color: #fff;
+    text-decoration: none;
+    & + a {
+      margin-left: 10px;
+    }
+  }
+}
