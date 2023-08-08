@@ -1,6 +1,7 @@
 import thumbnail from './thumbnail.png';
+import { Post } from '@/components/post/Post.hooks';
 
-export const post = {
+export const post: Post = {
   id: 1,
   title: 'test',
   description: 'test test test test test test',
@@ -8,7 +9,7 @@ export const post = {
   uploadAt: new Date(),
 };
 
-export const postList = new Array(10).fill(post).map((post, idx) => ({
+export const postList: Post[] = new Array(10).fill(post).map((post, idx) => ({
   ...post,
   id: idx,
 }));

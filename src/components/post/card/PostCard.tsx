@@ -1,13 +1,8 @@
 import Image from 'next/image';
 import styles from './PostCard.module.scss';
+import { Post } from '@/components/post/Post.hooks';
 
-export type PostCardProps = {
-  title: string;
-  description: string;
-  thumbnailUrl: string;
-  uploadAt: Date;
-};
-
+export type PostCardProps = Post;
 export const PostCard = ({ title, description, thumbnailUrl, uploadAt }: PostCardProps) => (
   <div className={styles.root}>
     <div className={styles.header}>
