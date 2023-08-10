@@ -4,6 +4,7 @@ import React from 'react';
 import styles from './layout.module.scss';
 import classNames from 'classnames';
 import { Header } from '@/components/header/Header';
+import './global.scss';
 
 const inter = Inter({ subsets: ['latin'] });
 
