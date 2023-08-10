@@ -18,18 +18,13 @@
 
 .logo {
   a {
-    color: #fff;
     text-decoration: line-through;
     letter-spacing: 0.2rem;
   }
 }
 
 .navigation {
-  a {
-    color: #fff;
-    text-decoration: none;
-    & + a {
-      margin-left: 20px;
-    }
+  a + a {
+    margin-left: 10px;
   }
 }
