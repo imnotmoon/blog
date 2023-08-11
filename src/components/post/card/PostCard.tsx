@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './PostCard.module.scss';
 import { Post } from '@/components/post/Post.hooks';
+import { formatDate } from '@/utils/date';
 
 export type PostCardProps = Post;
 export const PostCard = ({ title, description, thumbnailUrl, uploadAt }: PostCardProps) => (
@@ -9,7 +10,7 @@ export const PostCard = ({ title, description, thumbnailUrl, uploadAt }: PostCar
       <Image src={thumbnailUrl} alt={title} className={styles.thumbnail} width={250} height={400} />
     </div>
     <div className={styles.body}>
-      <p className={styles.date}>{uploadAt.toString()}</p>
+      <p className={styles.date}>{formatDate(uploadAt)}</p>
       <h4 className={styles.title}>{title}</h4>
       <p className={styles.description}>{description}</p>
     </div>

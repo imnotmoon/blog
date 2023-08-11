@@ -28,6 +28,7 @@
 
 .date {
   margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .title {
@@ -45,6 +46,7 @@
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: rgba(255, 255, 255, 0.8);
 
   display: -webkit-box;
   -webkit-box-orient: vertical;
