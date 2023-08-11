@@ -9,7 +9,7 @@ export const PostCard = ({ title, description, thumbnailUrl, uploadAt }: PostCar
       <Image src={thumbnailUrl} alt={title} className={styles.thumbnail} width={250} height={400} />
     </div>
     <div className={styles.body}>
-      <p>{uploadAt.toString()}</p>
+      <p className={styles.date}>{uploadAt.toString()}</p>
       <h4 className={styles.title}>{title}</h4>
       <p className={styles.description}>{description}</p>
     </div>

@@ -1,12 +1,52 @@
 .root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px;
+  border: 1px solid #333;
+
+  transition: border 0.3s ease;
+
+  &:hover {
+    border-color: #aaa;
+  }
 }
 
-.header {}
+.header {
+  margin-bottom: 20px;
+}
 
-.body {}
+.body {
+  width: 100%;
+}
 
-.thumbnail {}
+.thumbnail {
+  width: 100%;
+  object-fit: cover;
+}
 
-.title {}
+.date {
+  margin-bottom: 8px;
+}
 
-.description {}
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 1.3rem;
+  line-clamp: 2;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

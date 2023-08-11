@@ -1,10 +1,9 @@
 .root {
   display: flex;
   justify-content: space-between;
-  padding: 36px 20px;
+  padding: 40px;
 
   border: 2px solid #444;
-  border-radius: 24px;
 
   transition: border 0.3s ease;
 
@@ -13,16 +12,32 @@
   }
 }
 
-.header {}
+.header {
+  width: 60%;
+}
 
-.body {}
+.body {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.date {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
 
 .title {
   font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.description {}
+.description {
+  font-size: 1.7rem;
+}
 
-.thumbnail {}
+.thumbnail {
+  width: 100%;
+  object-fit: cover;
+}
 
 .upload {}

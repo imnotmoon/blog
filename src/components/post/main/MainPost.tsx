@@ -7,7 +7,7 @@ export type MainPostProps = Post;
 export const MainPost = ({ title, description, thumbnailUrl, uploadAt }: MainPostProps) => (
   <div className={styles.root}>
     <div className={styles.header}>
-      <p>{uploadAt.toString()}</p>
+      <p className={styles.date}>{uploadAt.toString()}</p>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
     </div>
