@@ -1,3 +1,5 @@
+'use client';
+
 import HelloWorld from '@/mdx/hello.mdx';
 
 const Post = () => (
