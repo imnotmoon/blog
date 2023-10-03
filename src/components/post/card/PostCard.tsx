@@ -4,15 +4,15 @@ import { Post } from '@/components/post/Post.hooks';
 import { formatDate } from '@/utils/date';
 
 export type PostCardProps = Post;
-export const PostCard = ({ title, description, thumbnailUrl, uploadAt }: PostCardProps) => (
+export const PostCard = ({ name, thumbnail }: PostCardProps) => (
   <div className={styles.root}>
     <div className={styles.header}>
-      <Image src={thumbnailUrl} alt={title} className={styles.thumbnail} width={250} height={400} />
+      <Image src={thumbnail} alt={name} className={styles.thumbnail} width={250} height={400} />
     </div>
     <div className={styles.body}>
-      <p className={styles.date}>{formatDate(uploadAt)}</p>
-      <h4 className={styles.title}>{title}</h4>
-      <p className={styles.description}>{description}</p>
+      <p className={styles.date}>{formatDate(new Date())}</p>
+      <h4 className={styles.title}>{name}</h4>
+      <p className={styles.description}>{'asdfasdf'}</p>
     </div>
   </div>
 );
